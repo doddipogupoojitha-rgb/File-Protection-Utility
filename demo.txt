@@ -1,0 +1,13 @@
+This is a test file for File Protection Utility.
+
+Steps to test:
+1. pip install -r requirements.txt
+2. python file_protection.py encrypt demo.txt mypassword
+3. Check demo.txt.enc created
+4. python file_protection.py decrypt demo.txt.enc mypassword
+5. Verify original file restored
+
+Features verified:
+- AES-256 encryption
+- PBKDF2 key derivation
+- MAC verification
